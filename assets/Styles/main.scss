@@ -156,6 +156,9 @@ header{
         p, h2{
             margin-bottom: 5%;
         }
+        .scrollMobileText{
+            display: none;
+        }
     }
     &Text{
         position: absolute;
@@ -302,6 +305,18 @@ footer{
                     border: 7px double #fff;
                 }
                 padding-bottom: 10% ;
+                .scrollMobileText{
+                    margin-top: 5%;
+                    display: block;
+                    div{
+                        text-align: center;
+                        width: 100%;
+                        font-size: 2rem;
+                        .scrollSpan{
+                            @include fontBorderWhite;
+                        }
+                    }
+                }
             }
         }
     }

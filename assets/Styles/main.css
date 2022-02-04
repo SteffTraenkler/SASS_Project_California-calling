@@ -295,6 +295,9 @@ header nav div {
 .scroll article p, .scroll article h2 {
   margin-bottom: 5%;
 }
+.scroll article .scrollMobileText {
+  display: none;
+}
 .scrollText {
   position: absolute;
   width: 100%;
@@ -460,6 +463,20 @@ footer .logos img:nth-of-type(2) {
   }
   main .scroll article h2 {
     border: 7px double #fff;
+  }
+  main .scroll article .scrollMobileText {
+    margin-top: 5%;
+    display: block;
+  }
+  main .scroll article .scrollMobileText div {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+  }
+  main .scroll article .scrollMobileText div .scrollSpan {
+    font-family: "Larish Neue Semibold";
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
   }
 
   .poppyBear-circle, .scrollText {

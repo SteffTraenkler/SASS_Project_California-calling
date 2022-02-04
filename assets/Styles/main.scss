@@ -1,0 +1,195 @@
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_generals.scss";
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .vertLine{
+        height: 230px;
+        width: 1px;
+        border: 1px solid rgb(110, 109, 109);
+        background-color: $bgWhite;
+        margin-top: 5px;
+    }
+    article{
+        h1{
+            width: min-content;
+            margin: 0 auto;
+            .spanH{
+                @include fontBorderWhite;
+            }
+        }
+        margin: 5% auto 10% auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-bottom: 5%;
+        div{
+            width: 6%;
+        }
+    }
+}
+/// main ///
+.map{
+    background: url(../img/map.svg) black no-repeat;
+    background-size: 37%;
+    background-position: right 2% bottom 12%;
+    padding: 11% 8%;
+    article{
+        margin-top: 10%;
+        line-height: 5rem;
+    }
+}
+.middle{
+    height: 230vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    div{
+        position: absolute;
+        width: 23%;
+        aspect-ratio: 3/2;
+    }
+    &-1{
+        @include position(-5%, 10%,  "", "");
+    }
+    &-2{
+        @include position(15%, "", "", 5%);
+    }
+    &-3{
+        @include position(35%, 0, "", "");
+    }
+    &-4{
+        @include position(50%, "", "", 15%);
+    }
+    &-5{
+        @include position(60%, 13%, "", "");
+    }
+    &-6{
+        @include position(73%, "", "", 0);
+    }
+    &-7.mBig{
+        @include position("", 10%, -3%, "");
+        width: 35%;
+        aspect-ratio: 3/2;
+        z-index: 3;
+    }
+    article{
+        width: 35.5%;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        p{
+            line-height: 2em;
+        }
+    }
+}
+.goldenBear{
+    position: relative;
+    padding: 15% 0 55% 10%;
+    &-1{
+        position: absolute;
+        z-index: 2;
+        width: 55%;
+        aspect-ratio: 2/2;
+        @include position("", "", -13%, 10%);
+    }
+    &-2{
+        position: absolute;
+        z-index: 3;
+        width: 28%;
+        aspect-ratio: 3/4;
+        @include position("", 12%, -6%, "");
+    }
+}
+.poppyBear{
+    position: relative;
+    padding: 15% 0 72% 10%;
+    overflow: hidden;
+    article{
+        margin-top: 23%;
+    }
+    &-circle{
+        position: absolute;
+        z-index: -1;
+        width: 37%;
+        @include position(-11%, -15%, "", "");
+        @include roundandround;
+    }
+    &-1{
+        position: absolute;
+        z-index: 2;
+        width: 53%;
+        aspect-ratio: 1/1;
+        @include position("", "", 5%, 32%);
+    }
+    &-2{
+        position: absolute;
+        z-index: 3;
+        width: 28%;
+        aspect-ratio: 3/4;
+        @include position("", "", 9%, 11%);
+    }
+}
+.scroll{
+    position: relative;
+    height: 95vh;
+    overflow: hidden;
+    article{
+        width: 33%;
+        line-height: 3em;
+        margin: 10% auto auto 10%;
+        p, h2{
+            margin-bottom: 5%;
+        }
+    }
+    &Text{
+        position: absolute;
+        width: 90%;
+        transform: rotate(45deg);
+        background-color:#fff;
+        height: 8rem;
+        color: #000;
+        @include position(34%, -20%, "", "");
+        div{
+            width: 400%;
+            font-size: 7rem;
+            @include scrollingX;
+            .scrollSpan{
+                @include spanText;
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 15% 1% 10%;
+    ul{
+        gap: 10px;
+        margin-bottom: 13%;
+        li{
+            width: 25px;
+            height: 23px;
+        }
+    }
+    p{
+        margin-bottom: 13%;
+    }
+    .logos{
+        display: flex;
+        align-items: flex-end;
+        width: 100px;
+        height: 50px;
+        img:nth-of-type(2){
+            height: 50%;
+        }
+    }
+}

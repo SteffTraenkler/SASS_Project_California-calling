@@ -1,0 +1,85 @@
+@import "_fonts.scss";
+@import "_variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer, .bgBlack{
+    background-color: $bgBlack;
+    @include fontWhiteBold;
+}
+h1{
+    font-size: 13vmin;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    @include fontRegular;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+
+// more specific generals
+
+header, main{
+    a{
+        color: #fff;
+        @include fontRegular;
+        text-decoration: unset;
+        font-size: 1.25rem;
+        padding: 1em 2.5em;
+        border: 1px solid #fff;
+        transition: .3s linear;
+        &:hover{
+            color: #000;
+            background-color: #fff;
+        }
+    }
+
+}
+
+// Bears article
+
+.bears{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    p{
+        font-size: 1.3em;
+        margin: 4% auto;
+    }
+    div:nth-of-type(1){
+        margin-top: -12%;
+        h1{
+            line-height: 1em;
+            font-size: 11vmin;
+            width: min-content;
+        }
+    }
+    div:nth-of-type(2){
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+// ///////////////////////////
+
+
+// div img, li img{
+//     width: 400px;
+//     height: 400px;
+// }
+

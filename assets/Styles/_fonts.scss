@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Larish Neue Semibold';
+    src: url(../font/LarishNeueSemibold.woff);
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../font/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+@mixin fontWhiteBold{
+    font-family: 'Larish Neue Semibold';
+    color: #fff;
+    font-weight: 500;
+}
+@mixin fontBorderWhite{
+    font-family: 'Larish Neue Semibold';
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+}
+@mixin fontRegular{
+    font-family: 'Work Sans';
+    font-size: 1.1em;
+}
+@mixin spanText{
+    font-family: 'Larish Neue Semibold';
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
+
+// mixin position
+@mixin position($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// mixin animations
+@mixin roundandround{
+    animation: rotation 20s infinite linear;
+    @keyframes rotation{
+        0%{transform: rotate(0deg)}
+        100%{transform: rotate(359deg)}
+    }
+}
+@mixin scrollingX{
+    animation: scroll 10s infinite linear;
+    @keyframes scroll{
+        0%{transform: translateX(3%)}
+        50%{transform: translateX(-25%)}
+        100%{transform: translateX(3%);}
+
+    }
+}

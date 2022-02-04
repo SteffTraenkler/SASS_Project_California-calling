@@ -151,12 +151,12 @@ header{
     }
     &Text{
         position: absolute;
-        width: 90%;
+        width: 100%;
         transform: rotate(45deg);
         background-color:#fff;
         height: 8rem;
         color: #000;
-        @include position(34%, -20%, "", "");
+        @include position(29%, -26%, "", "");
         div{
             width: 400%;
             font-size: 7rem;

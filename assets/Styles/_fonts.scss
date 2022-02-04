@@ -45,9 +45,8 @@
 @mixin scrollingX{
     animation: scroll 10s infinite linear;
     @keyframes scroll{
-        0%{transform: translateX(3%)}
-        50%{transform: translateX(-25%)}
-        100%{transform: translateX(3%);}
-
+        0%{transform: translateX(6%)}
+        50%{transform: translateX(-10%)}
+        100%{transform: translateX(6%);}
     }
 }

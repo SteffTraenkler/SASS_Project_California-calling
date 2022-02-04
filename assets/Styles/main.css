@@ -297,13 +297,13 @@ header nav div {
 }
 .scrollText {
   position: absolute;
-  width: 90%;
+  width: 100%;
   transform: rotate(45deg);
   background-color: #fff;
   height: 8rem;
   color: #000;
-  top: 34%;
-  right: -20%;
+  top: 29%;
+  right: -26%;
   bottom: "";
   left: "";
 }
@@ -315,24 +315,24 @@ header nav div {
 }
 @-webkit-keyframes scroll {
   0% {
-    transform: translateX(3%);
+    transform: translateX(6%);
   }
   50% {
-    transform: translateX(-25%);
+    transform: translateX(-10%);
   }
   100% {
-    transform: translateX(3%);
+    transform: translateX(6%);
   }
 }
 @keyframes scroll {
   0% {
-    transform: translateX(3%);
+    transform: translateX(6%);
   }
   50% {
-    transform: translateX(-25%);
+    transform: translateX(-10%);
   }
   100% {
-    transform: translateX(3%);
+    transform: translateX(6%);
   }
 }
 .scrollText div .scrollSpan {

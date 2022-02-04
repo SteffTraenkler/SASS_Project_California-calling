@@ -366,4 +366,124 @@ footer .logos {
 }
 footer .logos img:nth-of-type(2) {
   height: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  header .vertLine {
+    height: 100px;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  main h1 {
+    font-size: 8vmin;
+  }
+  main .middle {
+    padding: 10% 0;
+    height: unset;
+    position: unset;
+    grid-template-rows: unset;
+  }
+  main .middle article {
+    padding: 2%;
+    margin: 10%;
+    width: 60%;
+    border: 7px double #000;
+  }
+  main .middle article p {
+    line-height: 1.5em;
+  }
+  main .middle div {
+    position: unset;
+    width: 60%;
+  }
+  main .middle-7.mBig {
+    width: 60%;
+  }
+  main .goldenBear {
+    padding: 10% 5%;
+    position: unset;
+    display: grid;
+    place-items: center;
+  }
+  main .goldenBear-2, main .goldenBear-1 {
+    position: unset;
+    width: 80%;
+    margin: 5% auto;
+  }
+  main .goldenBear .bears {
+    grid-template-columns: 1fr;
+    gap: 5%;
+  }
+  main .goldenBear .bears div:nth-of-type(1) {
+    text-align: center;
+    -webkit-text-decoration: underline #fff;
+            text-decoration: underline #fff;
+  }
+  main .goldenBear .bears div:nth-of-type(1) h1 {
+    width: unset;
+  }
+  main .poppyBear {
+    padding: 10% 5%;
+    position: unset;
+    display: grid;
+    place-items: center;
+  }
+  main .poppyBear-2, main .poppyBear-1 {
+    position: unset;
+    width: 80%;
+    margin: 10% auto;
+  }
+  main .poppyBear .bears {
+    grid-template-columns: 1fr;
+    gap: 5%;
+  }
+  main .poppyBear .bears div:nth-of-type(1) {
+    text-align: center;
+    -webkit-text-decoration: underline #000;
+            text-decoration: underline #000;
+  }
+  main .poppyBear .bears div:nth-of-type(1) h1 {
+    width: unset;
+  }
+  main .scroll {
+    position: unset;
+    height: unset;
+  }
+  main .scroll article {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  main .scroll article h2 {
+    border: 7px double #fff;
+  }
+
+  .poppyBear-circle, .scrollText {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+  footer div {
+    text-align: center;
+  }
+  footer div ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div p {
+    margin-bottom: 5%;
+  }
+  footer .logos {
+    justify-content: space-around;
+    width: 50px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header, footer, .bgBlack{
     background-color: $bgBlack;
     @include fontWhiteBold;
@@ -69,17 +68,7 @@ header, main{
         width: 90%;
     }
 }
-
-
-
-
-
-
-// ///////////////////////////
-
-
-// div img, li img{
-//     width: 400px;
-//     height: 400px;
-// }
+// /////////////////////////////////////////////////
+////////////////////// media query ////////////////
+//////////////////////////////////////////////////
 

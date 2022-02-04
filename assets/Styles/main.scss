@@ -2,7 +2,7 @@
 @import "_variables.scss";
 @import "_generals.scss";
 
-
+// /// header start ///
 header{
     display: flex;
     flex-direction: column;
@@ -35,7 +35,11 @@ header{
         }
     }
 }
+
+
 /// main ///
+
+    // map section
 .map{
     background: url(../img/map.svg) black no-repeat;
     background-size: 37%;
@@ -46,6 +50,7 @@ header{
         line-height: 5rem;
     }
 }
+    // scattered imgs section
 .middle{
     height: 230vh;
     position: relative;
@@ -90,6 +95,7 @@ header{
         }
     }
 }
+    // golden bear section
 .goldenBear{
     position: relative;
     padding: 15% 0 55% 10%;
@@ -108,6 +114,7 @@ header{
         @include position("", 12%, -6%, "");
     }
 }
+    // poppy bear section
 .poppyBear{
     position: relative;
     padding: 15% 0 72% 10%;
@@ -137,6 +144,7 @@ header{
         @include position("", "", 9%, 11%);
     }
 }
+    // section with scrolling text
 .scroll{
     position: relative;
     height: 95vh;
@@ -167,6 +175,9 @@ header{
         }
     }
 }
+
+// footer //
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -190,6 +201,131 @@ footer{
         height: 50px;
         img:nth-of-type(2){
             height: 50%;
+        }
+    }
+}
+// /////////////////////////////////////////////////
+////////////////////// media query ////////////////
+//////////////////////////////////////////////////
+
+
+@media screen and (max-width: 1023px) {
+    header{ 
+        .vertLine{
+        height: 100px;
+        }
+        nav{
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+    main {
+        h1{
+            font-size: 8vmin;
+        }
+        // middle section
+        .middle{
+            padding: 10% 0;
+            height: unset;
+            position: unset;
+            grid-template-rows: unset;
+            article{
+                padding: 2%;
+                margin: 10%;
+                width: 60%;
+                border: 7px double #000;
+                p{
+                    line-height: 1.5em;
+                }
+            }
+            div{
+                position: unset;
+                width: 60%;
+            }
+            &-7.mBig{
+                width: 60%;
+            }
+        }
+        // goldenBear section
+        .goldenBear{
+            padding: 10% 5%;
+            position: unset;
+            display: grid;
+            place-items: center;
+            &-2, &-1{
+                position: unset;
+                width: 80%;
+                margin: 5% auto;
+            }
+            .bears{
+                grid-template-columns: 1fr;
+                gap: 5%;
+                div:nth-of-type(1) {
+                    text-align: center;
+                    text-decoration: underline #fff;
+                    h1{
+                        width: unset;
+                    }
+                }
+            }
+        }
+        .poppyBear{
+            padding: 10% 5%;
+            position: unset;
+            display: grid;
+            place-items: center;
+            &-2, &-1{
+                position: unset;
+                width: 80%;
+                margin: 10% auto;
+            }
+            .bears{
+                grid-template-columns: 1fr;
+                gap: 5%;
+                div:nth-of-type(1) {
+                    text-align: center;
+                    text-decoration: underline #000;
+                    h1{
+                        width: unset;
+                    }
+                }
+            }
+        }
+        .scroll{
+            position: unset;
+            height: unset;
+            article{
+                width: 80%;
+                text-align: center;
+                h2{
+                    border: 7px double #fff;
+                }
+                padding-bottom: 10% ;
+            }
+        }
+    }
+    .poppyBear-circle, .scrollText{
+        display:none;
+    }
+    footer{
+        flex-direction: column;
+        padding-bottom: 5%;
+        div{
+            text-align: center;
+            ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            p{
+                margin-bottom: 5%;
+            }
+        }
+        .logos{
+            justify-content: space-around;
+            width: 50px;
+            height: 25px;
         }
     }
 }
